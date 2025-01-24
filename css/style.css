@@ -75,6 +75,13 @@ button {
   );
 }
 
+.carousel-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /*? carousel-list */
 .carousel-container {
   padding: 90px 0;
@@ -105,6 +112,9 @@ button {
 }
 
 .carousel-red {
+  position: relative;
+  overflow: hidden;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -117,17 +127,36 @@ button {
     #39060f 100%
   );
 
-  padding: 60px 0;
+  padding: 50px 0;
+}
+
+.carousel-red:after {
+  content: "Best value";
+
+  position: absolute;
+  top: 11%;
+  right: -7%;
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+
+  background-color: #ffd43d;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
 }
 
 .carousel-img {
-  width: 310.15px;
-  height: 262.948;
+  width: 300px;
+  height: auto;
 }
 
 .carousel-content {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+
   height: 100%;
 }
 
@@ -140,6 +169,7 @@ button {
   letter-spacing: 1.56px;
 
   margin-bottom: 40px;
+  text-align: left;
 }
 
 .card-text {
@@ -172,10 +202,48 @@ button {
   height: 45px;
 }
 
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .carouse-btt {
   width: 174.295px;
   height: 41.67px;
 
   border-radius: 50px;
   background-color: #fff;
+
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+
+  color: #333;
+  letter-spacing: 0.28px;
+
+  margin-top: 25px;
+}
+
+/*? ARROWS  */
+
+.arrow-right {
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 460px;
+  margin-top: 60px;
+}
+
+.icon-container svg {
+  cursor: pointer;
+}
+
+.arrow-right {
+  transform: rotate(180deg);
 }
