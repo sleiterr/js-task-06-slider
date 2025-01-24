@@ -1,6 +1,6 @@
 /* RESET CSS */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 *,
 *::before,
@@ -67,12 +67,27 @@ button {
 /*! CAROUSEL-SECTION */
 /**========================*/
 
+.section-carousel {
+  background: radial-gradient(
+    121.01% 70.71% at 50% 50%,
+    #797474 0%,
+    #000 91.5%
+  );
+}
+
 /*? carousel-list */
 .carousel-container {
-  position: relative;
   padding: 90px 0;
 }
 .carousel-title {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 48px;
+
+  color: #fff;
+  text-align: center;
+
+  margin-bottom: 60px;
 }
 
 .carousel-list {
@@ -84,14 +99,15 @@ button {
 }
 
 .carousel-list {
-  /* position: absolute;
-  top: 50%; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .carousel-red {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 720px;
   height: 520px;
   border-radius: 20px;
@@ -100,4 +116,66 @@ button {
     #ba193a 0%,
     #39060f 100%
   );
+
+  padding: 60px 0;
+}
+
+.carousel-img {
+  width: 310.15px;
+  height: 262.948;
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-title {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 52px;
+
+  color: #fff;
+  letter-spacing: 1.56px;
+
+  margin-bottom: 40px;
+}
+
+.card-text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 18px;
+
+  color: #fff;
+  text-align: right;
+  line-height: normal;
+  letter-spacing: 0.54px;
+
+  margin: 0 75px 30px 0;
+}
+
+.price {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 52px;
+
+  color: #fff;
+  text-align: right;
+  letter-spacing: 1.56px;
+
+  margin-right: 75px;
+}
+
+.price i {
+  width: 42px;
+  height: 45px;
+}
+
+.carouse-btt {
+  width: 174.295px;
+  height: 41.67px;
+
+  border-radius: 50px;
+  background-color: #fff;
 }
