@@ -1,0 +1,1 @@
+# js-task-06-slider
