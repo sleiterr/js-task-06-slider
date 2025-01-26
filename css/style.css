@@ -131,7 +131,7 @@ button {
   scroll-snap-align: center;
 
   /* width: 720px; */
-  flex: 0 0 720px;
+  flex: 0 0 760px;
   height: 520px;
   border-radius: 20px;
   margin: 0 auto;
@@ -141,6 +141,8 @@ button {
   transition: 0.5s;
   box-shadow: 14px 14px 8px 0px rgba(0, 0, 0, 0.25);
 }
+
+/*? active for li element */
 
 .red-item {
   position: relative;
@@ -172,7 +174,7 @@ button {
 
   position: absolute;
   top: 11%;
-  right: -7%;
+  right: -6%;
 
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -187,8 +189,23 @@ button {
 .carousel-img {
   display: block;
   width: 300px;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  object-position: left;
+}
+
+.green-img {
+  display: block;
+  width: 360.448px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blue-img {
+  display: block;
+  width: 370px;
+  height: 100%;
+  /* object-fit: cover; */
 }
 
 .carousel-content {
@@ -197,6 +214,7 @@ button {
   justify-content: flex-end;
 
   height: 100%;
+  margin-right: 60px;
 }
 
 .card-title {
@@ -205,10 +223,10 @@ button {
   font-size: 52px;
 
   color: #fff;
-  letter-spacing: 1.56px;
+  letter-spacing: 1.20px;
 
   margin-bottom: 40px;
-  text-align: left;
+  text-align: right;
 }
 
 .card-text {
@@ -221,7 +239,7 @@ button {
   line-height: normal;
   letter-spacing: 0.54px;
 
-  margin: 0 75px 30px 0;
+  /* margin: 0 75px 30px 0; */
 }
 
 .price {
@@ -233,7 +251,7 @@ button {
   text-align: right;
   letter-spacing: 1.56px;
 
-  margin-right: 75px;
+  margin-top: 30px;
 }
 
 .price i {
@@ -248,20 +266,19 @@ button {
   width: 100%;
 }
 
-.carouse-btt {
-  width: 174.295px;
-  height: 41.67px;
-
+.carousel-btt {
   border-radius: 50px;
   background-color: #fff;
 
   font-family: "Open Sans";
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 16px;
 
   color: #333;
   letter-spacing: 0.28px;
+  text-transform: uppercase;
 
+  padding: 14px 56px;
   margin-top: 25px;
 }
 
@@ -286,9 +303,9 @@ button {
 .arrow-right {
   transform: rotate(180deg);
 }
-
+/* 
 @media screen and (max-width: 1024px) {
   .carousel-list > li {
     width: calc(100vw - 90px);
   }
-}
+} */
