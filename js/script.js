@@ -1,6 +1,6 @@
 //? CAROUSEL
 
-const carouseIitems = [
+const carouselItems = [
   {
     src: "../img/converse-red1.png",
     alt: "converse-red",
@@ -30,11 +30,10 @@ const carouseIitems = [
 function renderCarousel() {
   const carouselList = document.querySelector(".carousel-list");
 
-  carouseIitems.forEach((item) => {
+  carouselItems.forEach((item) => {
     const li = document.createElement("li");
-    li.classList.add("carousel-item");
-
-    li.classList.add(item.colorClass);
+    li.classList.add("carousel-item", item.colorClass);
+    // li.classList.add(item.colorClass);
 
     //? reate IMG
     const img = document.createElement("img");
@@ -89,14 +88,14 @@ const items = document.querySelectorAll(".carousel-item");
 
 let currentIndex = 0;
 
-document.querySelector(".arrow-right").onclick = function () {
+document.querySelector(".bttn-right").onclick = function () {
   if (currentIndex < items.length - 1) {
     currentIndex++;
     centerItem();
   }
 };
 
-document.querySelector(".arrow-left").onclick = function () {
+document.querySelector(".bttn-left").onclick = function () {
   if (currentIndex > 0) {
     currentIndex--;
     centerItem();
