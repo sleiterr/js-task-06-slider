@@ -94,6 +94,7 @@ button {
 .carousel-container {
   padding: 90px 0;
 }
+
 .carousel-title {
   font-family: "Montserrat", serif;
   font-weight: 400;
@@ -426,29 +427,40 @@ button {
     padding: 15px 15px;
   }
 
-  .carousel-item {
+  .carousel-container {
+    padding: 120px 0;
+  }
 
+  .carousel-title {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-bottom: 40px;
+  }
+
+  .carousel-box {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-item {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     /* width: 720px; */
-    flex: 0 0 315px;
-    height: 560px;
+    flex: 0 0 290px;
+    height: auto;
 
     padding: 20px 20px;
   }
 
   .carousel-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
-    gap: 40px;
-    /* width: 100%; */
-    width: max-content;
-    padding-left: calc(50% - 720px / 2);
-    margin: 0 auto;
+    gap: 50px;
   }
 
   .carousel-content {
@@ -470,20 +482,9 @@ button {
   }
 
   .red-item:after {
-    content: "Best value";
-
     position: absolute;
     top: 10%;
     right: -20%;
-
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #333;
-
-    background-color: #ffd43d;
-    padding: 0.8rem 8rem;
-    transform: rotate(45deg);
   }
 
   .card-title {
@@ -526,5 +527,9 @@ button {
 
     padding: 12px 35px;
     margin-top: 30px;
+  }
+
+  .styled-wrapper {
+    display: none;
   }
 }
