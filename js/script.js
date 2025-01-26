@@ -2,7 +2,7 @@
 
 const carouselItems = [
   {
-    src: "../img/converse-red1.png",
+    src: "./img/converse-red1.png",
     alt: "converse-red",
     title: "converse-red",
     text: "Lorem ipsum dolor sit amet consectetur. Vitae nulla non eu turpis dolor ultrices eget. Sapien dis ante at adipiscing eget consequat commodo mauris aliquet.",
@@ -10,7 +10,7 @@ const carouselItems = [
     colorClass: "red-item",
   },
   {
-    src: "../img/converse-green2.png",
+    src: "./img/converse-green2.png",
     alt: "converse-green",
     title: "converse-green",
     text: "Lorem ipsum dolor sit amet consectetur. Vitae nulla non eu turpis dolor ultrices eget. Sapien dis ante at adipiscing eget consequat commodo mauris aliquet.",
@@ -18,7 +18,7 @@ const carouselItems = [
     colorClass: "green-item",
   },
   {
-    src: "../img/converse-blue3.png",
+    src: "./img/converse-blue3.png",
     alt: "converse-blue",
     title: "converse-blue",
     text: "Lorem ipsum dolor sit amet consectetur. Vitae nulla non eu turpis dolor ultrices eget. Sapien dis ante at adipiscing eget consequat commodo mauris aliquet.",
