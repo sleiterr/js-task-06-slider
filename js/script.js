@@ -103,7 +103,8 @@ document.querySelector(".bttn-left").onclick = function () {
 };
 
 function centerItem() {
-  const widthItem = items[currentIndex].offsetWidth;
+  const widthItem = items[currentIndex].offsetWidth; //? retur width element includ content, padding, border, but without ьфкпшт
+  
   const scrollPosition =
     items[currentIndex].offsetLeft -
     (carouselBox.offsetWidth / 2 - widthItem / 2);
